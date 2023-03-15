@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { IndeterminateProgressBarComponent } from './components/indeterminate-progress-bar/indeterminate-progress-bar.component';
+import { SearchbarComponent } from './components/searchbar/searchbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    IndeterminateProgressBarComponent
+    IndeterminateProgressBarComponent,
+    SearchbarComponent
   ],
   imports: [
     BrowserModule,
