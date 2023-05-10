@@ -9,7 +9,9 @@
             alt="Your Company"
           />
         </div>
-        <span class="text-white ml-2 cursor-pointer">Fake Store</span>
+        <span class="text-white ml-2 cursor-pointer" routerLink=""
+          >Fake Store</span
+        >
       </div>
       <div class="hidden sm:block">
         <app-searchbar
@@ -45,7 +47,7 @@
               />
             </button>
           </div>
-          <button type="button">
+          <button routerLink="/favorites">
             <span class="sr-only">View Favorites</span>
             <img src="../assets/svg/heart-filled-red.svg" alt="favorite" />
           </button>
@@ -88,7 +90,7 @@
         </div>
       </div>
       <div class="-mr-2 flex md:hidden space-x-3">
-        <button type="button">
+        <button routerLink="/favorites">
           <span class="sr-only">View Favorites</span>
           <img
             src="../assets/svg/heart-filled-red.svg"
