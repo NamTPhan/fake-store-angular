@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
   public isCartSideBarOpen = false;
   public isMobileMenuOpen = false;
+  public data: any;
 
   public toggleCartSideBar(): void {
     this.isCartSideBarOpen = !this.isCartSideBarOpen;
@@ -15,5 +16,13 @@ export class NavbarComponent {
 
   public toggleMobileMenu(): void {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  }
+
+  public handleSearchSubmit(): void {
+    console.log('Search!', this.data);
+  }
+
+  public handleInputChange(value: string): void {
+    this.data = value;
   }
 }
