@@ -11,6 +11,7 @@ import { FavoritePageComponent } from './views/favorite-page/favorite-page.compo
 import { HomePageComponent } from './views/home-page/home-page.component';
 import { ProductInfoPageComponent } from './views/product-info-page/product-info-page.component';
 import { NotFoundPageComponent } from './views/not-found-page/not-found-page.component';
+import { RatingStarsComponent } from './components/rating-stars/rating-stars.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { NotFoundPageComponent } from './views/not-found-page/not-found-page.com
     HomePageComponent,
     ProductInfoPageComponent,
     NotFoundPageComponent,
+    RatingStarsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, StoreModule.forRoot({}, {})],
   providers: [],
