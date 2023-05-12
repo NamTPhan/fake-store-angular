@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -33,7 +34,12 @@ import { BannerComponent } from './components/banner/banner.component';
     ModalComponent,
     BannerComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, StoreModule.forRoot({}, {})],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    StoreModule.forRoot({}, {}),
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
