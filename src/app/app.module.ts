@@ -11,6 +11,11 @@ import { FavoritePageComponent } from './views/favorite-page/favorite-page.compo
 import { HomePageComponent } from './views/home-page/home-page.component';
 import { ProductInfoPageComponent } from './views/product-info-page/product-info-page.component';
 import { NotFoundPageComponent } from './views/not-found-page/not-found-page.component';
+import { RatingStarsComponent } from './components/rating-stars/rating-stars.component';
+import { ProductCardComponent } from './components/product-card/product-card.component';
+import { ShoppingCartSidebarComponent } from './components/shopping-cart-sidebar/shopping-cart-sidebar.component';
+import { ModalComponent } from './components/modal/modal.component';
+import { BannerComponent } from './components/banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +27,11 @@ import { NotFoundPageComponent } from './views/not-found-page/not-found-page.com
     HomePageComponent,
     ProductInfoPageComponent,
     NotFoundPageComponent,
+    RatingStarsComponent,
+    ProductCardComponent,
+    ShoppingCartSidebarComponent,
+    ModalComponent,
+    BannerComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, StoreModule.forRoot({}, {})],
   providers: [],
