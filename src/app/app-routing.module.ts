@@ -6,7 +6,7 @@ import { NotFoundPageComponent } from './views/not-found-page/not-found-page.com
 import { ProductInfoPageComponent } from './views/product-info-page/product-info-page.component';
 
 const routes: Routes = [
-  { path: '', title: 'Home', component: HomePageComponent },
+  { path: '', title: 'Fake Store Angular', component: HomePageComponent },
   { path: 'favorites', title: 'Favorites', component: FavoritePageComponent },
   {
     path: 'product-info/:id',
