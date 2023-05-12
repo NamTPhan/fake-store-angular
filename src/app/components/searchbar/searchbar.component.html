@@ -1,0 +1,19 @@
+<div class="flex w-full">
+  <input
+    [id]="id"
+    class="w-full bg-[#F2F2F2] px-4 py-1 rounded-2xl rounded-r-none focus:outline-none"
+    type="text"
+    [name]="name"
+    [placeholder]="placeholder"
+    [value]="value"
+    (change)="handleOnChange($event)"
+  />
+  <div class="bg-[#F2F2F2] rounded-r-3xl h-full">
+    <button
+      class="bg-green-500 rounded-full h-full p-2"
+      (click)="handleSubmit()"
+    >
+      <img src="../assets/svg/search.svg" alt="search" />
+    </button>
+  </div>
+</div>
