@@ -1,0 +1,43 @@
+<div
+  class="flex flex-col bg-white p-4 w-[300px] h-[350px] shadow-md rounded-lg border border-gray-200"
+>
+  <div class="flex self-center">
+    <img
+      class="rounded-t-lg h-[150px] cursor-pointer"
+      [src]="thumbnail"
+      [alt]="productName"
+    />
+  </div>
+  <div class="flex self-center">
+    <h3 class="text-gray-900 font-semibold text-lg tracking-tight">
+      {{ productName }}
+    </h3>
+  </div>
+  <div class="flex mt-2.5 mb-5"><app-rating-stars [rating]="rating" /></div>
+  <div class="flex justify-between">
+    <span class="text-xl font-bold text-gray-900"> €&nbsp; {{ price }},- </span>
+  </div>
+  <div class="flex justify-end mt-auto">
+    <button
+      class="bg-white hover:text-white rounded-full p-2 text-center"
+      (click)="handleClickAddFavorite()"
+    >
+      <img
+        *ngIf="isFavorite"
+        src="../assets/svg/heart-filled-red.svg"
+        alt="favorite"
+      />
+      <img
+        *ngIf="!isFavorite"
+        src="../assets/svg/heart-outline-grey.svg"
+        alt="no-favorite"
+      />
+    </button>
+    <button
+      class="bg-white hover:text-white hover:bg-green-500 focus:ring-4 focus:ring-blue-300 font-bold rounded-lg text-sm px-5 py-2.5 text-center"
+      (click)="handleClickAddCart()"
+    >
+      Add to Cart
+    </button>
+  </div>
+</div>

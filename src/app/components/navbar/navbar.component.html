@@ -83,7 +83,7 @@
             </div>
           </div>
 
-          <button type="button">
+          <button (click)="toggleCartSideBar()">
             <span class="sr-only">Cart</span>
             <img src="../assets/svg/cart.svg" alt="cart" />
           </button>
@@ -96,7 +96,7 @@
             src="../assets/svg/heart-filled-red.svg"
             alt="favorite"
           /></button
-        ><button type="button">
+        ><button (click)="toggleCartSideBar()">
           <span class="sr-only">Cart</span>
           <img src="../assets/svg/cart.svg" alt="cart" />
         </button>
@@ -170,3 +170,35 @@
   </div>
 </nav>
 <app-indeterminate-progress-bar />
+<app-shopping-cart-sidebar
+  [isVisible]="isCartSideBarOpen"
+  [cartItems]="[
+    {
+      id: 1,
+      title: 'iPhone 9',
+      description: 'An apple mobile which is nothing like apple',
+      price: 549,
+      discountPercentage: 12.96,
+      rating: 4.69,
+      stock: 94,
+      brand: 'Apple',
+      category: 'smartphones',
+      thumbnail: 'https://i.dummyjson.com/data/products/1/thumbnail.jpg',
+      images: []
+    },
+    {
+      id: 2,
+      title: 'iPhone 9',
+      description: 'An apple mobile which is nothing like apple',
+      price: 549,
+      discountPercentage: 12.96,
+      rating: 4.69,
+      stock: 94,
+      brand: 'Apple',
+      category: 'smartphones',
+      thumbnail: 'https://i.dummyjson.com/data/products/1/thumbnail.jpg',
+      images: []
+    }
+  ]"
+  (clickClose)="toggleCartSideBar()"
+/>
