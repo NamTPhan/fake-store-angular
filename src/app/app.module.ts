@@ -14,6 +14,8 @@ import { NotFoundPageComponent } from './views/not-found-page/not-found-page.com
 import { RatingStarsComponent } from './components/rating-stars/rating-stars.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { ShoppingCartSidebarComponent } from './components/shopping-cart-sidebar/shopping-cart-sidebar.component';
+import { ModalComponent } from './components/modal/modal.component';
+import { BannerComponent } from './components/banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { ShoppingCartSidebarComponent } from './components/shopping-cart-sidebar
     RatingStarsComponent,
     ProductCardComponent,
     ShoppingCartSidebarComponent,
+    ModalComponent,
+    BannerComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, StoreModule.forRoot({}, {})],
   providers: [],
